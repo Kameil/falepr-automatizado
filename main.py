@@ -61,4 +61,8 @@ emailConfirm_input.send_keys(email)
 texto = browser.find_element(By.NAME, "dsc_texto")
 texto.send_keys("Olá, sera que o senhor presidente poderia enviar uma foto oficial para mim?")
 
-time.sleep(10)
+time.sleep(1)
+enviar = browser.find_element(By.XPATH, '//*[@id="form"]/div[16]/div/button')
+enviar.click()
+
+time.sleep(100)
